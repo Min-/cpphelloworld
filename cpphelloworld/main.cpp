@@ -7,9 +7,13 @@
 //
 
 #include <iostream>
+#include "log.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    int x = 5;
+    bool res = x == 5;
+    if (res){
+        log("hello world.");
+    }
     return 0;
 }
