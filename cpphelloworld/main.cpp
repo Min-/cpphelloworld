@@ -9,27 +9,40 @@
 #include <iostream>
 #include "log.hpp"
 
-void increment(int& value)
+class Entity
 {
-    value++;
-}
-
-int add1(int value)
-{
-    return value + 1;
-}
+public:
+    float X, Y;
+    
+    // constructor, all primitive types needs to be initialized.
+    Entity()
+    {
+        X = 0;
+        Y = 0;
+        std::cout << "construct" << std::endl;
+    }
+    
+    Entity(float x, float y)
+    {
+        X = x;
+        Y = y;
+        std::cout << "construct" << std::endl;
+    }
+    
+    ~Entity()
+    {
+        std::cout << "destruct" << std::endl;
+    }
+    
+    void Print()
+    {
+        std::cout << X << "," << Y << std::endl;
+    }
+};
 
 int main()
 {
-    int a = 5;
-    std::cout << a << std::endl;
-    std::cout << &a << std::endl;
-    increment(a);
-    std::cout << a << std::endl;
-    std::cout << &a << std::endl;
-    a = a + 1;
-    std::cout << add1(5) << std::endl;
-    std::cout << &a << std::endl;
-    
+    Entity e(4,5);
+    e.Print();
     return 0;
 }
