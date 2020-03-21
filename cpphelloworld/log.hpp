@@ -10,11 +10,13 @@
 #define log_hpp
 
 #include <stdio.h>
+#include <iostream>
 
-int multiply (int a, int b);
-void log(const char* message);
-void log(int a);
+int multiply (int, int);
+void log(const char*);
+void log(int);
+void log(std::string);
 void initlog();
-void multiply_log(int a, int b);
+void multiply_log(int, int);
 
 #endif /* log_hpp */

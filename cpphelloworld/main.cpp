@@ -12,50 +12,38 @@
 class Entity
 {
 public:
-    float X, Y;
-    
-    void Move(float xa, float ya)
-    {
-        X += xa;
-        Y += ya;
-    }
-    
-    void Print()
-    {
-        std::cout << X << "," << Y << std::endl;
-    }
+    virtual std::string GetName(){return "Entity";}
 };
 
 
 class Player: public Entity
 {
+private:
+    std::string m_Name;
 public:
-    const char* name;
+    // constructor
+    Player(const std::string& name)
+    : m_Name(name){}
     
-    Player()
-    {
-        name = "no name";
-        X = 0;
-        Y = 0;
-    }
-    
-    void PrintName()
-    {
-        log(name);
-    }
+    std::string GetName() override {return m_Name;}
 };
 
 int main()
 {
-    Player player;
-    player.Print();
-    player.X = 5.0;
-    player.Y = 10.4;
+    Entity e;
+    log(e.GetName());
     
-    player.Move(5,2);
-    player.Print();
-    player.PrintName();
+    Entity* en = &e;
+    std::cout << en->GetName() << std::endl;
     
+    Player* player = new Player("min");
+    log(player->GetName());
+    
+    Entity* ent = player;
+    log(ent->GetName());
     log(sizeof(player));
+    log(sizeof(*player));
+    
+    
     return 0;
 }
