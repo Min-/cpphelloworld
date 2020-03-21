@@ -9,11 +9,27 @@
 #include <iostream>
 #include "log.hpp"
 
-int main() {
-    int x = 5;
-    bool res = x == 5;
-    if (res){
-        log("hello world.");
-    }
+void increment(int& value)
+{
+    value++;
+}
+
+int add1(int value)
+{
+    return value + 1;
+}
+
+int main()
+{
+    int a = 5;
+    std::cout << a << std::endl;
+    std::cout << &a << std::endl;
+    increment(a);
+    std::cout << a << std::endl;
+    std::cout << &a << std::endl;
+    a = a + 1;
+    std::cout << add1(5) << std::endl;
+    std::cout << &a << std::endl;
+    
     return 0;
 }
