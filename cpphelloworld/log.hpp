@@ -13,6 +13,7 @@
 
 int multiply (int a, int b);
 void log(const char* message);
+void log(int a);
 void initlog();
 void multiply_log(int a, int b);
 

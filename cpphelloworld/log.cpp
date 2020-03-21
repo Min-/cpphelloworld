@@ -17,6 +17,10 @@ void log(const char* message){
     std::cout << message << std::endl;
 }
 
+void log(int a){
+    std::cout << a << std::endl;
+}
+
 void initlog(){
     log("Initialize log.");
 }
