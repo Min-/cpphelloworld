@@ -12,9 +12,8 @@
 class Entity
 {
 public:
-    virtual std::string GetName(){return "Entity";}
+    virtual std::string GetName() = 0;
 };
-
 
 class Player: public Entity
 {
@@ -23,19 +22,13 @@ private:
 public:
     // constructor
     Player(const std::string& name)
-    : m_Name(name){}
+        :m_Name(name){}
     
     std::string GetName() override {return m_Name;}
 };
 
 int main()
 {
-    Entity e;
-    log(e.GetName());
-    
-    Entity* en = &e;
-    std::cout << en->GetName() << std::endl;
-    
     Player* player = new Player("min");
     log(player->GetName());
     
