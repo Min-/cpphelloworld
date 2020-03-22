@@ -9,10 +9,17 @@
 #include <iostream>
 #include "log.hpp"
 
-class Entity
+class Printable
+{
+public:
+    virtual std::string GetClassName() = 0;
+};
+
+class Entity: public Printable
 {
 public:
     virtual std::string GetName() = 0;
+    std::string GetClassName() override {return "Entity";}
 };
 
 class Player: public Entity
@@ -25,18 +32,20 @@ public:
         :m_Name(name){}
     
     std::string GetName() override {return m_Name;}
+    std::string GetClassName() override {return "Player";}
 };
+
+void Print(Printable* obj)
+{
+    log(obj->GetClassName());
+}
 
 int main()
 {
     Player* player = new Player("min");
     log(player->GetName());
-    
-    Entity* ent = player;
-    log(ent->GetName());
-    log(sizeof(player));
-    log(sizeof(*player));
-    
+    log(player->GetClassName());
+    Print(player);
     
     return 0;
 }
