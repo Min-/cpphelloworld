@@ -10,61 +10,32 @@
 #include "log.hpp"
 
 
-class Entity
-{
-protected:
-    int X, Y;
-public:
-    int count;
-    
-    Entity()
-    {
-        X = 5;
-        Y = 5;
-        count = 0;
-    }
-    
-    int PrintSum()
-    {
-        count += 1;
-        log(count);
-        return X + Y;
-    }
-};
-
-class Player: public Entity
-{
-public:
-    void Print()
-    {
-        log(PrintSum());
-    }
-    
-    void PrintMul()
-    {
-        log(X * Y);
-    }
-    
-    void ChangeX()
-    {
-        X += X;
-    }
-};
-
-
 int main()
 {
-    Player* p = new Player;
-    p->Print();
-    p->Print();
-    p->Print();
+    //int arr[3];
+    const int size = 5;
+    int arr[size] = {1,2,3}; // stack allocated array (destroyed when finished), on-site
+    int* arr2 = arr;
+    int* arr3 = new int[5]; // heap (alive until the program ends) you have to jump around.
     
-    p->PrintMul();
-    p->ChangeX();
-    p->PrintMul();
     
-    Player p2;
-    p2.Print();
+    *(arr2 + 2) = 100;
     
+    log(arr[2]);
+    log(arr2[1]);
+    log(arr2[2]);
+    std::cout << &arr << std::endl;
+    std::cout << arr2 << std::endl;
+    std::cout << &arr2 << std::endl;
+    std::cout << *arr << std::endl;
+    std::cout << *arr2 << std::endl;
+
+    std::cout << arr3 << std::endl;
+    std::cout << &arr3 << std::endl;
+    std::cout << *arr3 << std::endl;
+    std::cout << *(&arr3) << std::endl;
+    delete[] arr3;
+    
+    log("end");
     return 0;
 }

@@ -16,6 +16,7 @@ int multiply (int, int);
 void log(const char*);
 void log(int);
 void log(std::string);
+void log(std::string*);
 void initlog();
 void multiply_log(int, int);
 

@@ -29,6 +29,11 @@ void log(std::string a)
     std::cout << a << std::endl;
 }
 
+void log(std::string* a)
+{
+    std::cout << a << std::endl;
+}
+
 void initlog()
 {
     log("Initialize log.");
