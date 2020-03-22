@@ -9,43 +9,62 @@
 #include <iostream>
 #include "log.hpp"
 
-class Printable
-{
-public:
-    virtual std::string GetClassName() = 0;
-};
 
-class Entity: public Printable
+class Entity
 {
+protected:
+    int X, Y;
 public:
-    virtual std::string GetName() = 0;
-    std::string GetClassName() override {return "Entity";}
+    int count;
+    
+    Entity()
+    {
+        X = 5;
+        Y = 5;
+        count = 0;
+    }
+    
+    int PrintSum()
+    {
+        count += 1;
+        log(count);
+        return X + Y;
+    }
 };
 
 class Player: public Entity
 {
-private:
-    std::string m_Name;
 public:
-    // constructor
-    Player(const std::string& name)
-        :m_Name(name){}
+    void Print()
+    {
+        log(PrintSum());
+    }
     
-    std::string GetName() override {return m_Name;}
-    std::string GetClassName() override {return "Player";}
+    void PrintMul()
+    {
+        log(X * Y);
+    }
+    
+    void ChangeX()
+    {
+        X += X;
+    }
 };
 
-void Print(Printable* obj)
-{
-    log(obj->GetClassName());
-}
 
 int main()
 {
-    Player* player = new Player("min");
-    log(player->GetName());
-    log(player->GetClassName());
-    Print(player);
+    Player* p = new Player;
+    p->Print();
+    p->Print();
+    p->Print();
+    
+    p->PrintMul();
+    p->ChangeX();
+    p->PrintMul();
+    
+    Player p2;
+    p2.Print();
     
     return 0;
 }
