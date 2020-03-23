@@ -9,22 +9,13 @@
 #include <iostream>
 #include <string>
 
-std::string AddString(const std::string& s1, const std::string& s2)
-{
-    const std::string out = s1 + s2;
-    return out;
-}
-
-int main()
-{
-    const char* name = "viola";
-    std::cout << name << std::endl;
-    char min[6] = {'v', 'i', 'o', 'l', 'a', '\0'};
-    std::string love = "I love ";
-    std::string name2 = "viola";
-    std::cout << min << std::endl;
-    std::cout << name2 << std::endl;
-    std::cout << name2.find('a') << std::endl;
-    std::cout << AddString(love, name2) << std::endl;
+int main(){
+    int sum = 0;
+    for (int i = 1; i < 1000; i++){
+        if (i % 3 == 0 or i % 5 == 0){
+            sum += i;
+        }
+    }
+    std::cout << sum << std::endl;
     return 0;
 }
