@@ -7,35 +7,24 @@
 //
 
 #include <iostream>
-#include "log.hpp"
+#include <string>
 
+std::string AddString(const std::string& s1, const std::string& s2)
+{
+    const std::string out = s1 + s2;
+    return out;
+}
 
 int main()
 {
-    //int arr[3];
-    const int size = 5;
-    int arr[size] = {1,2,3}; // stack allocated array (destroyed when finished), on-site
-    int* arr2 = arr;
-    int* arr3 = new int[5]; // heap (alive until the program ends) you have to jump around.
-    
-    
-    *(arr2 + 2) = 100;
-    
-    log(arr[2]);
-    log(arr2[1]);
-    log(arr2[2]);
-    std::cout << &arr << std::endl;
-    std::cout << arr2 << std::endl;
-    std::cout << &arr2 << std::endl;
-    std::cout << *arr << std::endl;
-    std::cout << *arr2 << std::endl;
-
-    std::cout << arr3 << std::endl;
-    std::cout << &arr3 << std::endl;
-    std::cout << *arr3 << std::endl;
-    std::cout << *(&arr3) << std::endl;
-    delete[] arr3;
-    
-    log("end");
+    const char* name = "viola";
+    std::cout << name << std::endl;
+    char min[6] = {'v', 'i', 'o', 'l', 'a', '\0'};
+    std::string love = "I love ";
+    std::string name2 = "viola";
+    std::cout << min << std::endl;
+    std::cout << name2 << std::endl;
+    std::cout << name2.find('a') << std::endl;
+    std::cout << AddString(love, name2) << std::endl;
     return 0;
 }
