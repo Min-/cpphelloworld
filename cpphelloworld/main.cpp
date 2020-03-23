@@ -9,13 +9,33 @@
 #include <iostream>
 #include <string>
 
-int main(){
-    int sum = 0;
-    for (int i = 1; i < 1000; i++){
-        if (i % 3 == 0 or i % 5 == 0){
-            sum += i;
-        }
-    }
-    std::cout << sum << std::endl;
+using String = std::string;
+
+class Entity
+{
+private:
+    String m_Name;
+public:
+    Entity(): m_Name("unknown"){};
+    Entity(const String& name): m_Name(name){};
+    
+    const String& GetName() const {return m_Name;};
+};
+
+int main()
+{
+    Entity e;
+    std::cout << &e << std::endl;
+    std::cout << e.GetName() << std::endl;
+    Entity* e2 = new Entity; // heap, return an Entity*, where it is on the heap
+    std::cout << e2->GetName() << std::endl;
+    String name = "name3";
+    std::cout << &name << std::endl;
+    Entity e3(name); // Stack, Do this a much as you can, fastest way
+    std::cout << e3.GetName() << std::endl;
+    Entity e4 = Entity("e4"); // Stack, Do this a much as you can
+    std::cout << e4.GetName() << std::endl;
+    delete e2;
+    
     return 0;
 }
