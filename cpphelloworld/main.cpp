@@ -11,31 +11,62 @@
 
 using String = std::string;
 
-class Entity
+struct Vector2
 {
-private:
-    String m_Name;
-public:
-    Entity(): m_Name("unknown"){};
-    Entity(const String& name): m_Name(name){};
+    float x, y;
+    Vector2(float x, float y)
+    : x(x), y(y) {}
     
-    const String& GetName() const {return m_Name;};
+    Vector2 Add(const Vector2& other) const
+    {
+        return Vector2(other.x + x, other.y + y);
+    }
+    
+    // use const for no change for class
+    Vector2 operator+(const Vector2& other) const
+    {
+        return Add(other);
+    }
+    
+    std::string to_str()
+    {
+        return std::to_string(x) + ", " + std::to_string(y);
+    }
 };
+
+// overloading << operator
+std::ostream& operator<<(std::ostream& stream, const Vector2& other)
+{
+    stream << other.x << ", " << other.y;
+    return stream;
+}
+    
+bool operator==(const Vector2& a, const Vector2& b)
+{
+    return a.x == b.x && a.y == b.y;
+}
+    
+std::ostream& operator<<(std::ostream& stream, const bool& a)
+{
+    if (a)
+        stream << "true";
+    else
+        stream << "false";
+    return stream;
+}
 
 int main()
 {
-    Entity e;
-    std::cout << &e << std::endl;
-    std::cout << e.GetName() << std::endl;
-    Entity* e2 = new Entity; // heap, return an Entity*, where it is on the heap
-    std::cout << e2->GetName() << std::endl;
-    String name = "name3";
-    std::cout << &name << std::endl;
-    Entity e3(name); // Stack, Do this a much as you can, fastest way
-    std::cout << e3.GetName() << std::endl;
-    Entity e4 = Entity("e4"); // Stack, Do this a much as you can
-    std::cout << e4.GetName() << std::endl;
-    delete e2;
+    Vector2 position(4.0f, 4.0f);
+    Vector2 speed(1.0f, 5.5f);
+    
+    Vector2 res = position.Add(speed);
+    Vector2 res2 = position + speed;
+    
+    std::cout << res.to_str() << std::endl;
+    std::cout << res2.to_str() << std::endl;
+    std::cout << res << std::endl;
+    std::cout << true << std::endl;
     
     return 0;
 }
