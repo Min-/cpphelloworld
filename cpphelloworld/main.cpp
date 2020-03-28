@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+#include <memory>
 
 class Entity
 {
@@ -20,6 +21,11 @@ public:
     ~Entity()
     {
         std::cout << "destroy a Entity" << std::endl;
+    }
+    
+    void Print()
+    {
+        std::cout << "print function" << std::endl;
     }
 };
 
@@ -46,7 +52,18 @@ public:
 
 int main()
 {
-    ScopedPtr ep = new Entity();
+    {
+        std::shared_ptr<Entity> shareE0;
+        {
+            std::unique_ptr<Entity> entity = std::make_unique<Entity>();
+            entity->Print();
+        }
+        {
+            std::shared_ptr<Entity> shareE = std::make_shared<Entity>();
+            shareE0 = shareE;
+            shareE0->Print();
+        }
+    }
     
     return 0;
 }
