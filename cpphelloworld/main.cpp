@@ -14,6 +14,16 @@ class Vertex
 {
 public:
     float x, y, z;
+    
+    Vertex(float x, float y, float z)
+    : x(x), y(y), z(z){};
+    
+    // copy constructor
+    Vertex(const Vertex& vertex)
+    : x(vertex.x), y(vertex.y), z(vertex.z)
+    {
+        std::cout << "copy" << std::endl;
+    };
 };
 
 std::ostream& operator<<(std::ostream&stream, const Vertex& vertex)
@@ -26,11 +36,13 @@ std::ostream& operator<<(std::ostream&stream, const Vertex& vertex)
 int main()
 {
     Vertex v = Vertex {3,4,6.3};
-    std::cout << v << std::endl;
      
     std::vector<Vertex> vertices;
-    vertices.push_back(v);
-    vertices.push_back({4,5,6});
+    vertices.reserve(3);
+    vertices.emplace_back(34,56,32);
+    std::cout << "line" << std::endl;
+    vertices.emplace_back(4,5,6);
+    std::cout << "line" << std::endl;
     
     for (int i = 0; i < vertices.size(); i++)
         std::cout << vertices[i] << std::endl;
