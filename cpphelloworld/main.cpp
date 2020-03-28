@@ -8,15 +8,40 @@
 
 #include <iostream>
 #include <string>
-#include <memory>
+#include <vector>
 
+class Vertex
+{
+public:
+    float x, y, z;
+};
+
+std::ostream& operator<<(std::ostream&stream, const Vertex& vertex)
+{
+    stream << vertex.x << ", " << vertex.y << ", " << vertex.z;
+    return stream;
+}
+
+// pass Vector by reference to avoid copying
 int main()
 {
-    const int a = 3;
-    int b = a;
-    b = 41;
-    std::cout << a << std::endl;
-    std::cout << b << std::endl;
+    Vertex v = Vertex {3,4,6.3};
+    std::cout << v << std::endl;
+     
+    std::vector<Vertex> vertices;
+    vertices.push_back(v);
+    vertices.push_back({4,5,6});
+    
+    for (int i = 0; i < vertices.size(); i++)
+        std::cout << vertices[i] << std::endl;
+    
+    for (Vertex& v : vertices)
+        std::cout << v << std::endl;
+    
+    vertices.clear();
+    
+    for (Vertex& v : vertices)
+           std::cout << v << std::endl;
     
     return 0;
 }
