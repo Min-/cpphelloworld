@@ -23,11 +23,30 @@ public:
     }
 };
 
+class ScopedPtr
+{
+private:
+    Entity* m_Ptr;
+    std::time_t m_result;
+public:
+    ScopedPtr(Entity* ptr)
+        : m_Ptr(ptr), m_result(std::time(nullptr))
+    {
+        std::cout << std::asctime(std::localtime(&m_result)) << std::endl;
+        std::cout << "scoped ptr created." << std::endl;
+    }
+    
+    ~ScopedPtr()
+    {
+        std::cout << "scoped ptr deleted." << std::endl;
+        std::cout << std::asctime(std::localtime(&m_result)) << m_result << " seconds since the Epoch\n";
+        delete m_Ptr;
+    }
+};
+
 int main()
 {
-    Entity e;
-    std::cout << "hello world" << std::endl;
-    {Entity e2;}
-    std::cout << "hello world #2" << std::endl;
+    ScopedPtr ep = new Entity();
+    
     return 0;
 }
