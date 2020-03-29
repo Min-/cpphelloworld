@@ -29,11 +29,32 @@ void Print(T a){
     std::cout << a << std::endl;
 }
 
+auto AddOne(int a){
+    return a+1;
+}
+
 // pass Vector by reference to avoid copying
 int main()
 {
-    std::cout << "hello" << std::endl;
-    Print(addTwo(12.4f, 3.14f));
-    LOG("world");
+    auto as = 6;
+    Print<int>(AddOne(as));
+    
+    std::vector<std::string> string;
+    string.emplace_back("Apple");
+    string.emplace_back("Orange");
+    
+    for (std::string s : string){
+        Print(s);
+    }
+    
+    for (std::vector<std::string>::iterator it = string.begin();
+         it != string.end(); it++){
+        Print(*it);
+    }
+    
+    for (auto it = string.begin(); it != string.end(); it++){
+        Print(*it);
+    }
+    
     return 0;
 }
