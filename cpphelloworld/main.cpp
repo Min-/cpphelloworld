@@ -16,6 +16,13 @@ void Print(T value)
     std::cout << value << std::endl;
 }
 
+template<typename T>
+void PrintVec(T value)
+{
+    for (int i = 0; i < value.size(); i++)
+        Print(value[i]);
+}
+
 template<int N>
 class Array
 {
@@ -33,5 +40,9 @@ int main()
     Print("abc");
     Array<5>arr;
     Print(arr.GetSize());
+    
+    std::vector<int> v = {1,2,3};
+    PrintVec(v);
+    
     return 0;
 }
