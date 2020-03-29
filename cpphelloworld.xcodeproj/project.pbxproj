@@ -271,7 +271,7 @@
 				393AA468242461340048EA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		393AA469242461340048EA8F /* Build configuration list for PBXNativeTarget "cpphelloworld" */ = {
 			isa = XCConfigurationList;
@@ -280,7 +280,7 @@
 				393AA46B242461340048EA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
