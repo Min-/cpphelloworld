@@ -10,39 +10,30 @@
 #include <string>
 #include <vector>
 
-template<typename T>
-void Print(T value)
-{
-    std::cout << value << std::endl;
+
+#ifdef MZ_DEBUG
+#define LOG(x) std::cout << x << std::endl;
+#elif defined(MZ_RELEASE)
+#define LOG(x) std::cout << "release mode." << std::endl;
+#endif
+
+
+
+template<class T>
+T addTwo(T a, T b){
+    return a + b;
 }
 
 template<typename T>
-void PrintVec(T value)
-{
-    for (int i = 0; i < value.size(); i++)
-        Print(value[i]);
+void Print(T a){
+    std::cout << a << std::endl;
 }
-
-template<int N>
-class Array
-{
-private:
-    int m_Array[N];
-public:
-    int GetSize() const {return N;}
-};
 
 // pass Vector by reference to avoid copying
 int main()
 {
-    Print<int>(12);
-    Print(4.5f);
-    Print("abc");
-    Array<5>arr;
-    Print(arr.GetSize());
-    
-    std::vector<int> v = {1,2,3};
-    PrintVec(v);
-    
+    std::cout << "hello" << std::endl;
+    Print(addTwo(12.4f, 3.14f));
+    LOG("world");
     return 0;
 }
