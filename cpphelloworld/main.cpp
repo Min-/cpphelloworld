@@ -62,18 +62,19 @@ int main()
     }
     
     Print2("hello", 3);
+    std::cout << "-------" << std::endl;
     
     // lambda
     std::vector<int> values = {1,2,3,4};
     std::vector<int> res;
     for (int v: values){
-        res.emplace_back([](int x)
-        {return x+1;}(v));
+        res.emplace_back([](int* x)
+        {return *x+1;}(&v));
     }
     
-    for (int v: res){
-        Print(v);
-    }
+    for (int v: res) Print(v);
+    std::cout << "-------" << std::endl;
+    for (int v: values) Print(v);
     
     return 0;
 }
