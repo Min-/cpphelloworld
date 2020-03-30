@@ -7,30 +7,59 @@
 //
 
 #include <iostream>
-#include <string>
-#include <array>
-#include <vector>
 #include <thread>
+#include <chrono>
 
-static bool s_Finished = false;
+typedef long(*long2long)(long);
 
-void DoWork(){
-    using namespace std::literals::chrono_literals;
+struct Timer{
+    typedef std::chrono::time_point<std::chrono::steady_clock> time;
+    time start, end;
+    std::chrono::duration<float> duration;
     
-    while (!s_Finished){
-        std::cout << "working...\n";
-        std::cout << "thread id: = " << std::this_thread::get_id() << std::endl;
-        std::this_thread::sleep_for(1s);
+    Timer(){
+        start = std::chrono::high_resolution_clock::now();
+    };
+    
+    ~Timer(){
+        end = std::chrono::high_resolution_clock::now();
+        duration = end - start;
+        std::cout << "Total time: " << duration.count() * 1000.0f << " ms" << std::endl;
+    }
+    
+};
+
+long FracRecursive(long a){
+    Timer timer;
+    if (a == 1){
+        return 1;
+    } else {
+        return FracRecursive(a - 1) * a;
     }
 }
 
-int main(){
-    std::thread worker(DoWork);
-    std::cin.get();
-    s_Finished = true;
+long FracImperative(long a){
+    Timer timer;
+    long res = 1;
+    for (long i = 1; i <= a; i++){
+        res *= i;
+    }
+    return res;
+}
+
+void TimeFunction(long2long function, long n){
+    auto start = std::chrono::high_resolution_clock::now();
+    function(n);
+    auto stop = std::chrono::high_resolution_clock::now();
     
-    worker.join();
-    std::cout << "hello" << std::endl;
-    std::cout << "thread id: = " << std::this_thread::get_id() << std::endl;
+    std::chrono::duration<float> duration = stop - start;
+    std::cout << duration.count() << std::endl;
+}
+
+int main(){
+    TimeFunction(FracRecursive, 20);
+    TimeFunction(FracImperative, 20);
+    //FracRecursive(20);
+    //FracImperative(20);
     return 0;
 }
