@@ -10,17 +10,27 @@
 #include <string>
 #include <array>
 #include <vector>
+#include <thread>
 
-namespace apple {
-    void PrintApple(std::string s){
-        std::string temp = s;
-        std::reverse(temp.begin(), temp.end());
-        std::cout << temp << std::endl;
+static bool s_Finished = false;
+
+void DoWork(){
+    using namespace std::literals::chrono_literals;
+    
+    while (!s_Finished){
+        std::cout << "working...\n";
+        std::cout << "thread id: = " << std::this_thread::get_id() << std::endl;
+        std::this_thread::sleep_for(1s);
     }
 }
 
 int main(){
-    std::string a = "big";
-    apple::PrintApple(a);
-   return 0;
+    std::thread worker(DoWork);
+    std::cin.get();
+    s_Finished = true;
+    
+    worker.join();
+    std::cout << "hello" << std::endl;
+    std::cout << "thread id: = " << std::this_thread::get_id() << std::endl;
+    return 0;
 }
