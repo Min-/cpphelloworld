@@ -11,24 +11,16 @@
 #include <array>
 #include <vector>
 
-// pass Vector by reference to avoid copying
-int frac(int x){
-    if (x == 1){
-        return 1;
-    } else {
-        return x * frac(x - 1);
+namespace apple {
+    void PrintApple(std::string s){
+        std::string temp = s;
+        std::reverse(temp.begin(), temp.end());
+        std::cout << temp << std::endl;
     }
-}
-
-int frac2(int x){
-    int res = 1;
-    for (int i = 1; i <= x; i++){
-        res *= i;
-    }
-    return res;
 }
 
 int main(){
-   std::cout << frac2(5) << std::endl;
+    std::string a = "big";
+    apple::PrintApple(a);
    return 0;
 }
