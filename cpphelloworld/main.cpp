@@ -19,14 +19,10 @@ void PrintVector(std::vector<int> vector){
 }
 
 int main(){
-    std::vector<int> values = {4,2,6,1,3};
-    std::vector<int> values2 = values;
-    std::sort(values2.begin(), values2.end(), std::greater<>());
-    PrintVector(values2);
-    
-    std::sort(values2.begin(), values2.end(), [](int a, int b){return a < b;});
-    PrintVector(values);
-    PrintVector(values2);
-    
+    int a = 50;
+    double value = (double)a;
+    //double doublev = *(double*)&a;
+    std::cout << value << std::endl;
+    //std::cout << doublev << std::endl;
     return 0;
 }
