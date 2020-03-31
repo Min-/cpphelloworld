@@ -7,26 +7,26 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
+#include <functional>
 
+void PrintVector(std::vector<int> vector){
+    for (int v: vector){
+        std::cout << v << ", ";
+    }
+    std::cout << std::endl;
+}
 
 int main(){
-    //int* array = new int[50];
-    int** a2d = new int*[50];
-    for (int i = 0; i < 50; i++){
-        a2d[i] = new int[50];
-    }
+    std::vector<int> values = {4,2,6,1,3};
+    std::vector<int> values2 = values;
+    std::sort(values2.begin(), values2.end(), std::greater<>());
+    PrintVector(values2);
     
-    for (int i = 0; i < 50; i++){
-        delete[] a2d[i];
-    }
-    delete[] a2d;
-    
-    int* array = new int[5*5];
-    for (int i = 0; i < 5; i++){
-        for (int j = 0; j < 5; j++){
-            array[i + j * 5] = 0;
-        }
-    }
+    std::sort(values2.begin(), values2.end(), [](int a, int b){return a < b;});
+    PrintVector(values);
+    PrintVector(values2);
     
     return 0;
 }
