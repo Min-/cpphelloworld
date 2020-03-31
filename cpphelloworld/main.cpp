@@ -7,59 +7,26 @@
 //
 
 #include <iostream>
-#include <thread>
-#include <chrono>
 
-typedef long(*long2long)(long);
-
-struct Timer{
-    typedef std::chrono::time_point<std::chrono::steady_clock> time;
-    time start, end;
-    std::chrono::duration<float> duration;
-    
-    Timer(){
-        start = std::chrono::high_resolution_clock::now();
-    };
-    
-    ~Timer(){
-        end = std::chrono::high_resolution_clock::now();
-        duration = end - start;
-        std::cout << "Total time: " << duration.count() * 1000.0f << " ms" << std::endl;
-    }
-    
-};
-
-long FracRecursive(long a){
-    Timer timer;
-    if (a == 1){
-        return 1;
-    } else {
-        return FracRecursive(a - 1) * a;
-    }
-}
-
-long FracImperative(long a){
-    Timer timer;
-    long res = 1;
-    for (long i = 1; i <= a; i++){
-        res *= i;
-    }
-    return res;
-}
-
-void TimeFunction(long2long function, long n){
-    auto start = std::chrono::high_resolution_clock::now();
-    function(n);
-    auto stop = std::chrono::high_resolution_clock::now();
-    
-    std::chrono::duration<float> duration = stop - start;
-    std::cout << duration.count() << std::endl;
-}
 
 int main(){
-    TimeFunction(FracRecursive, 20);
-    TimeFunction(FracImperative, 20);
-    //FracRecursive(20);
-    //FracImperative(20);
+    //int* array = new int[50];
+    int** a2d = new int*[50];
+    for (int i = 0; i < 50; i++){
+        a2d[i] = new int[50];
+    }
+    
+    for (int i = 0; i < 50; i++){
+        delete[] a2d[i];
+    }
+    delete[] a2d;
+    
+    int* array = new int[5*5];
+    for (int i = 0; i < 5; i++){
+        for (int j = 0; j < 5; j++){
+            array[i + j * 5] = 0;
+        }
+    }
+    
     return 0;
 }
