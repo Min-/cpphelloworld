@@ -19,5 +19,6 @@ void log(std::string);
 void log(std::string*);
 void initlog();
 void multiply_log(int, int);
+void PrintLine();
 
 #endif /* log_hpp */

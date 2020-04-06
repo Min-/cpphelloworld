@@ -45,3 +45,7 @@ void multiply_log(int a, int b)
     log("the result is: ");
     std::cout << result << std::endl;
 }
+
+void PrintLine(){
+    std::cout << "--------------" << std::endl;
+}
