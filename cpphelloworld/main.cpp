@@ -38,5 +38,19 @@ int main()
     std::cout << d_ptr << std::endl;
     std::cout << *d_ptr << std::endl;
     std::cout << &a << std::endl;
+    
+    int* e_ptr;
+    e_ptr = &a;
+    *e_ptr = 4;
+    std::cout << *e_ptr << std::endl;
+    std::cout << *d_ptr << std::endl;
+    std::cout << a << std::endl;
+    
+    int* f_ptr(new int(5));
+    std::cout << *f_ptr << std::endl;
+    *f_ptr = 10;
+    std::cout << *f_ptr << std::endl;
+    std::cout << *d_ptr << std::endl;
+    std::cout << a << std::endl;
     return 0;
 }
