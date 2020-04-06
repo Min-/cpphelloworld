@@ -7,37 +7,24 @@
 //
 
 #include "pch.h"
-
-class Entity{
-public:
-    virtual void PrintName(){}
-};
-
-class Player : public Entity{
-};
-
-class Enemy : public Entity{
-};
+#include <any>
+#include <variant>
 
 int main()
 {
-    std::unique_ptr<Player> player1;
-    Player* player2 = new Player();
-    Entity* actualEnemy = new Enemy();
+    std::any data;
+    data = 2;
+    //data = "min";  // it can't be casted into a std::string
     
-    Entity* player3 = player2;
+    int string = std::any_cast<int>(data);
+    std::cout << string << std::endl;
     
-    //Player* player4 = player3; //Cannot initialize a variable of type 'Player *' with an lvalue of type 'Entity *
-    Player* player4 = dynamic_cast<Player*>(player3); // Entity needs to be polymorphic
-    Player* player5 = dynamic_cast<Player*>(actualEnemy);
+    // variant is safer
+    std::variant<int, std::string> datav;
+    datav = 2;
+    datav = "min";
+    std::string min = std::get<std::string>(datav);
+    std::cout << min << std::endl;
     
-    std::cout << player4 << std::endl;
-    std::cout << player5 << std::endl; // null pointer
-    
-    if (dynamic_cast<Player*>(actualEnemy)){
-        std::cout << "dynamic casting success." << std::endl;
-    } else {
-        std::cout << "return null pointer" << std::endl;
-    }
     return 0;
 }
