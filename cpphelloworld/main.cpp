@@ -21,26 +21,27 @@ void Print(T t){
     std::cout << t << std::endl;
 }
 
+int finished = 1;
+
+class Alarm{
+public:
+    
+    ~Alarm(){
+        finished = 0;
+    }
+};
 
 int main()
-{
-    std::string filename("/Users/min/Downloads/testtext.txt");
-    
-    std::ifstream file(filename);
-    std::string str;
-    std::string string;
-    std::vector<std::string> file_contents;
-    while (std::getline(file, str))
+{ 
     {
-        file_contents.emplace_back(str);
+        Alarm alarm;
+        std::cout << "T1 task" << std::endl;
     }
     
-    Print(string);
-    Print(&file_contents);
-    //Print(*(&file_contents));
-    Print(&file_contents[0]);
-    Print(&file_contents[1]);
-    Print(&file_contents[2]);
+
+    
+    std::cout << finished << std::endl;
+    std::cout << "run T2" << std::endl;
     
     return 0;
 }
