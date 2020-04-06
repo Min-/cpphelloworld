@@ -6,51 +6,10 @@
 //  Copyright © 2020 Min Zhang. All rights reserved.
 //
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <functional>
-#include <string>
-#include <fstream>
-
-#include "log.hpp"
-
-
+#include "pch.h"
 
 int main()
 {
-    int a = 3;
-    // this will create an error: being freed was not allocated, because a is deleted before a_ptr is deleted.
-    //std::unique_ptr<int> a_ptr(&a);
-    //std::cout << *a_ptr << std::endl;
-    
-    std::unique_ptr<int> b_ptr(new int(a));
-    std::cout << b_ptr << std::endl;
-    
-    std::unique_ptr<int> c_ptr = std::move(b_ptr);
-    std::cout << *c_ptr << std::endl;
-    //std::cout << *b_ptr << std::endl;
-    
-    std::cout << b_ptr << std::endl; // null pointer
-    
-    int* d_ptr;
-    d_ptr = &a;
-    std::cout << d_ptr << std::endl;
-    std::cout << *d_ptr << std::endl;
-    std::cout << &a << std::endl;
-    
-    int* e_ptr;
-    e_ptr = &a;
-    *e_ptr = 4;
-    std::cout << *e_ptr << std::endl;
-    std::cout << *d_ptr << std::endl;
-    std::cout << a << std::endl;
-    
-    int* f_ptr(new int(5));
-    std::cout << *f_ptr << std::endl;
-    *f_ptr = 10;
-    std::cout << *f_ptr << std::endl;
-    std::cout << *d_ptr << std::endl;
-    std::cout << a << std::endl;
+    std::cout << "hello world2!" << std::endl;
     return 0;
 }

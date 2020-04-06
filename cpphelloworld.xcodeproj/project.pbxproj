@@ -10,7 +10,22 @@
 		39003F1E243237B8009DEFA2 /* functional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39003F1D243237B8009DEFA2 /* functional.cpp */; };
 		393AA466242461340048EA8F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 393AA465242461340048EA8F /* main.cpp */; };
 		393AA46E242476F90048EA8F /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 393AA46C242476F90048EA8F /* log.cpp */; };
+		3992644D243B66FC005970B3 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3992644C243B66FC005970B3 /* pch.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		3992644B243B64F8005970B3 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.asm;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# <com.apple.compilers.gcc>\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		393AA460242461340048EA8F /* CopyFiles */ = {
@@ -30,6 +45,8 @@
 		393AA465242461340048EA8F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		393AA46C242476F90048EA8F /* log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
 		393AA46D242476F90048EA8F /* log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = log.hpp; sourceTree = "<group>"; };
+		3992644A243B6298005970B3 /* pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		3992644C243B66FC005970B3 /* pch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pch.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,8 @@
 				39003F1D243237B8009DEFA2 /* functional.cpp */,
 				393AA46C242476F90048EA8F /* log.cpp */,
 				393AA46D242476F90048EA8F /* log.hpp */,
+				3992644A243B6298005970B3 /* pch.h */,
+				3992644C243B66FC005970B3 /* pch.cpp */,
 			);
 			name = cpphelloworld;
 			path = /Users/min/dev/cpphelloworld/cpphelloworld;
@@ -83,6 +102,7 @@
 				393AA460242461340048EA8F /* CopyFiles */,
 			);
 			buildRules = (
+				3992644B243B64F8005970B3 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -131,6 +151,7 @@
 				393AA46E242476F90048EA8F /* log.cpp in Sources */,
 				39003F1E243237B8009DEFA2 /* functional.cpp in Sources */,
 				393AA466242461340048EA8F /* main.cpp in Sources */,
+				3992644D243B66FC005970B3 /* pch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +196,11 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/min/dev/cpphelloworld/cpphelloworld/pch.cpp;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					MZ_DEBUG,
 					"DEBUG=1",
@@ -192,6 +216,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -233,7 +258,9 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = MZ_RELEASE;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -245,6 +272,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
