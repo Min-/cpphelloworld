@@ -7,48 +7,21 @@
 //
 
 #include <iostream>
+#include <algorithm>
 //#include "pch.h"
 
-class Int{
-public:
-    int x;
-};
-
-template <class T>
-class IntString: public std::string, public Int{
-public:
-    IntString x;
-    
-    IntString(std::string a)
-    :x(a){};
-    IntString(int a)
-    :x(a){};
-};
-
-template <class T>
-// template is declaration
-void swap(T &x, T &y){
-    T temp;
-    temp = x;
-    x = y;
-    y = temp;
-}
 
 int main()
 {
-    std::string a = "this";
-    std::string b = "that";
-    std::cout << "a " << a << "\n" << "b " << b << std::endl;
-    swap(a, b);
-    std::cout << "a " << a << "\n" << "b " << b << std::endl;
+    int nums [] = {1,2,3,4,5};
+    const int target = 5;
     
+    std::cout << sizeof(nums) << std::endl;
+    std::cout << sizeof(nums) / sizeof(int) << std::endl;
     
-    IntString c(3);
-    IntString d((std::string)"abc");
-    std::cout << "c " << c << "\n" << "d " << d << std::endl;
-    swap(c, d);
-    std::cout << "c " << c << "\n" << "d " << d << std::endl;
-
-    
+    if (std::binary_search(nums, nums + sizeof(nums)/sizeof(int), target))
+        std::cout << "found" << std::endl;
+    else
+        std::cout << "not found" << std::endl;
     return 0;
 }
