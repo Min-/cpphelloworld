@@ -8,22 +8,22 @@
 
 #include <iostream>
 #include <algorithm>
-//#include "pch.h"
-
-auto print = [](const int& n) { std::cout << " " << n; };
+#include "pch.h"
 
 int main()
 {
     int nums [] = {1,2,3,4,5};
+    int * const p = nums;
+    std::unique_ptr<int *> up = std::make_unique<int *>(nums);
     
-    std::cout << std::all_of(nums, nums + sizeof(nums)/sizeof(int), [](int &x){return x > 1;}) << std::endl;
+    std::cout << *p << std::endl;
+    std::cout << *(p+1) << std::endl;
     
-    std::for_each(nums, nums + sizeof(nums)/sizeof(int), print);
-    std::cout << std::endl;
+    *(p+1) = 20;
+    std::cout << *(p+1) << std::endl;
+    std::cout << &p << std::endl;
     
-    std::for_each(nums, nums + sizeof(nums)/sizeof(int), [](int &x){x++;});
+    std::cout << **up << std::endl;
     
-    std::for_each(nums, nums + sizeof(nums)/sizeof(int), print);
-    std::cout << std::endl;
     return 0;
 }
