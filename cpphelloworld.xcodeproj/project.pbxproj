@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39003F1E243237B8009DEFA2 /* functional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39003F1D243237B8009DEFA2 /* functional.cpp */; };
+		3915D18D2459258000D188F6 /* classHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3915D18B2459258000D188F6 /* classHeader.cpp */; };
 		393AA466242461340048EA8F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 393AA465242461340048EA8F /* main.cpp */; };
 		393AA46E242476F90048EA8F /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 393AA46C242476F90048EA8F /* log.cpp */; };
 		3992644D243B66FC005970B3 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3992644C243B66FC005970B3 /* pch.cpp */; };
@@ -41,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		39003F1D243237B8009DEFA2 /* functional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functional.cpp; sourceTree = "<group>"; };
+		3915D18B2459258000D188F6 /* classHeader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classHeader.cpp; sourceTree = "<group>"; };
+		3915D18C2459258000D188F6 /* classHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classHeader.hpp; sourceTree = "<group>"; };
+		3915D18F2459330C00D188F6 /* templateClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = templateClass.hpp; sourceTree = "<group>"; };
 		393AA462242461340048EA8F /* cpphelloworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpphelloworld; sourceTree = BUILT_PRODUCTS_DIR; };
 		393AA465242461340048EA8F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		393AA46C242476F90048EA8F /* log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
@@ -80,11 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				393AA465242461340048EA8F /* main.cpp */,
+				3915D18F2459330C00D188F6 /* templateClass.hpp */,
 				39003F1D243237B8009DEFA2 /* functional.cpp */,
 				393AA46C242476F90048EA8F /* log.cpp */,
 				393AA46D242476F90048EA8F /* log.hpp */,
 				3992644A243B6298005970B3 /* pch.h */,
 				3992644C243B66FC005970B3 /* pch.cpp */,
+				3915D18B2459258000D188F6 /* classHeader.cpp */,
+				3915D18C2459258000D188F6 /* classHeader.hpp */,
 			);
 			name = cpphelloworld;
 			path = /Users/min/dev/cpphelloworld/cpphelloworld;
@@ -149,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				393AA46E242476F90048EA8F /* log.cpp in Sources */,
+				3915D18D2459258000D188F6 /* classHeader.cpp in Sources */,
 				39003F1E243237B8009DEFA2 /* functional.cpp in Sources */,
 				393AA466242461340048EA8F /* main.cpp in Sources */,
 				3992644D243B66FC005970B3 /* pch.cpp in Sources */,
