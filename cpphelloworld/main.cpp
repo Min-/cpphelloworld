@@ -18,8 +18,16 @@ int main(){
     int ans = a.getSum();
     std::cout << ans << std::endl;
     
+    Maybe<bool> d(true);
+    std::cout << d.Add2() << std::endl;
+    
     Maybe<int> b(12);
     std::cout << b.Add2() << std::endl;
+    
+    Maybe<int> c(100);
+    std::cout << c.Add3() << std::endl;
+    
+    
     return 0;
 }
 

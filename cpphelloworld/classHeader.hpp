@@ -34,8 +34,9 @@ public:
     }
     
     int Add2();
+    int Add3();
 };
 
 
-#include "templateClass.hpp"
+//#include "templateClass.hpp"
 #endif /* classHeader_hpp */
