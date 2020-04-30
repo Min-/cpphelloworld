@@ -10,6 +10,7 @@
 		39003F1E243237B8009DEFA2 /* functional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39003F1D243237B8009DEFA2 /* functional.cpp */; };
 		3915D192245A969800D188F6 /* Maybe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3915D190245A969800D188F6 /* Maybe.cpp */; };
 		3915D194245AAA8C00D188F6 /* for_each_n.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 3915D193245AAA5E00D188F6 /* for_each_n.hpp */; };
+		3915D197245AAEF000D188F6 /* DataStructures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3915D195245AAEF000D188F6 /* DataStructures.cpp */; };
 		393AA466242461340048EA8F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 393AA465242461340048EA8F /* main.cpp */; };
 		393AA46E242476F90048EA8F /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 393AA46C242476F90048EA8F /* log.cpp */; };
 		3992644D243B66FC005970B3 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3992644C243B66FC005970B3 /* pch.cpp */; };
@@ -49,6 +50,8 @@
 		3915D190245A969800D188F6 /* Maybe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Maybe.cpp; sourceTree = "<group>"; };
 		3915D191245A969800D188F6 /* Maybe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Maybe.hpp; sourceTree = "<group>"; };
 		3915D193245AAA5E00D188F6 /* for_each_n.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = for_each_n.hpp; path = ../../../Downloads/boost_1_73_0/boost/algorithm/cxx17/for_each_n.hpp; sourceTree = "<group>"; };
+		3915D195245AAEF000D188F6 /* DataStructures.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataStructures.cpp; sourceTree = "<group>"; };
+		3915D196245AAEF000D188F6 /* DataStructures.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataStructures.hpp; sourceTree = "<group>"; };
 		393AA462242461340048EA8F /* cpphelloworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpphelloworld; sourceTree = BUILT_PRODUCTS_DIR; };
 		393AA465242461340048EA8F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		393AA46C242476F90048EA8F /* log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				3915D18C2459258000D188F6 /* classHeader.hpp */,
 				3915D190245A969800D188F6 /* Maybe.cpp */,
 				3915D191245A969800D188F6 /* Maybe.hpp */,
+				3915D195245AAEF000D188F6 /* DataStructures.cpp */,
+				3915D196245AAEF000D188F6 /* DataStructures.hpp */,
 			);
 			name = cpphelloworld;
 			path = /Users/min/dev/cpphelloworld/cpphelloworld;
@@ -162,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3915D197245AAEF000D188F6 /* DataStructures.cpp in Sources */,
 				3915D194245AAA8C00D188F6 /* for_each_n.hpp in Sources */,
 				393AA46E242476F90048EA8F /* log.cpp in Sources */,
 				3915D192245A969800D188F6 /* Maybe.cpp in Sources */,
