@@ -22,20 +22,20 @@ class A2DD
   int getSum();
 };
 
-template <typename T>
-class Maybe
-{
-private:
-    int m_default;
+//template <typename T>
+//class Maybe
+//{
+//private:
+//    int m_default;
  
-public:
-    Maybe(T x){
-        m_default = x;
-    }
-    
-    int Add2();
-    int Add3();
-};
+//public:
+//    Maybe(T x){
+//        m_default = x;
+//    }
+//
+//    int Add2();
+//    int Add3();
+//};
 
 
 //#include "templateClass.hpp"
