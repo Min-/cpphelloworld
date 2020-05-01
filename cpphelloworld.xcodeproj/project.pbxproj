@@ -52,6 +52,9 @@
 		3915D193245AAA5E00D188F6 /* for_each_n.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = for_each_n.hpp; path = ../../../Downloads/boost_1_73_0/boost/algorithm/cxx17/for_each_n.hpp; sourceTree = "<group>"; };
 		3915D198245AC86C00D188F6 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		3915D199245AC8C400D188F6 /* main_stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_stack.cpp; sourceTree = "<group>"; };
+		3915D19B245BD77900D188F6 /* CodeNotes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CodeNotes.cpp; path = notes/CodeNotes.cpp; sourceTree = "<group>"; };
+		3915D19C245C1D4600D188F6 /* Show.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		3915D19D245C1DB300D188F6 /* Comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comparable.h; sourceTree = "<group>"; };
 		393AA462242461340048EA8F /* cpphelloworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpphelloworld; sourceTree = BUILT_PRODUCTS_DIR; };
 		393AA465242461340048EA8F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		393AA46C242476F90048EA8F /* log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
@@ -104,6 +107,9 @@
 				3915D191245A969800D188F6 /* Maybe.hpp */,
 				3915D198245AC86C00D188F6 /* Stack.h */,
 				3915D199245AC8C400D188F6 /* main_stack.cpp */,
+				3915D19B245BD77900D188F6 /* CodeNotes.cpp */,
+				3915D19C245C1D4600D188F6 /* Show.h */,
+				3915D19D245C1DB300D188F6 /* Comparable.h */,
 			);
 			name = cpphelloworld;
 			path = /Users/min/dev/cpphelloworld/cpphelloworld;
