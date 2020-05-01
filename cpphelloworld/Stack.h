@@ -1,16 +1,15 @@
 //
-//  DataStructures.hpp
+//  Stack.h
 //  cpphelloworld
 //
 //  Created by Min Zhang on 2020/4/30.
 //  Copyright © 2020 Min Zhang. All rights reserved.
 //
 
-#ifndef DataStructures_hpp
-#define DataStructures_hpp
+#ifndef Stack_h
+#define Stack_h
 
 #include <stdio.h>
-#include <string>
 
 template <typename T>
 class Stack{
@@ -19,11 +18,14 @@ private:
     int m_init_size = 100;
     int m_count = 0;
     T m_bottom = 0;
-    int m_real_size = m_init_size;
     
 public:
     Stack<T>(){
-        m_arr = new T [m_real_size];
+        m_arr = new T [m_init_size];
+    };
+    
+    Stack<T>(int size){
+        m_arr = new T [size];
     };
     
     bool empty(){
@@ -77,5 +79,4 @@ public:
     };
 };
 
-
-#endif /* DataStructures_hpp */
+#endif /* Stack_h */
