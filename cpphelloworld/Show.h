@@ -9,20 +9,17 @@
 #ifndef Show_h
 #define Show_h
 
+
 template <class A> struct Show {};
-template <>
-struct Show<int> {
+
+template <> struct Show<int> {
     static std::string (*show)(int);
 };
-std::string(*Show<int>::show)(int) = &std::to_string;
 
-template <>
-struct Show<bool> {
+template <> struct Show<bool> {
     static std::string show (bool);
 };
-std::string Show<bool>::show (bool b) {
-    return b ? "true" : "false";
-}
+
 
 
 #endif /* Show_h */
