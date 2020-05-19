@@ -1,5 +1,0 @@
-/Users/min/dev/cpphelloworld/CMakeFiles/stack.dir
-/Users/min/dev/cpphelloworld/CMakeFiles/helloworld.dir
-/Users/min/dev/cpphelloworld/CMakeFiles/src.dir
-/Users/min/dev/cpphelloworld/CMakeFiles/ALL_BUILD.dir
-/Users/min/dev/cpphelloworld/CMakeFiles/ZERO_CHECK.dir
