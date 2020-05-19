@@ -1,0 +1,7 @@
+CMakeFiles
+CMakeScripts
+Makefile
+*xcodeproj
+CMakeCache*
+*cmake
+*swp
