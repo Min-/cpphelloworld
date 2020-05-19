@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include "Show.h"
+#include "pch.h"
 
 template <> struct Show<int>;
 std::string(*Show<int>::show)(int) = &std::to_string;

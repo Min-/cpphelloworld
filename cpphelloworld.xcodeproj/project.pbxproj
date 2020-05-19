@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		0FFAA3DD53514353BC75A639 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2910DBFB64EA45E68841E768 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = A23C1DAE5F0D470184AF4443 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				90264F5732AD4536B3194B3A /* CMake Rules */,
+				D807E661B41B4C98ABCC6F2C /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -20,13 +20,15 @@
 		};
 		2914792646A142299FEA47FE /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 5830E8F64A1949FC8A6CE66E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 7E69E49FEBA246E38254ACC7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				C50944A5EE764AAAAA655791 /* CMake Rules */,
+				51C21D53EE934B8E8A37162D /* CMake Rules */,
 			);
 			dependencies = (
-				CF1E605A477C4B99B14E18F8 /* PBXTargetDependency */,
-				E1DEBA4A5C9246758D6DE987 /* PBXTargetDependency */,
+				403D7CE7F387428EB44EF76D /* PBXTargetDependency */,
+				F6E5CE47419C4356888C5DE4 /* PBXTargetDependency */,
+				FC1C6F38DEF146FCB59D1EF8 /* PBXTargetDependency */,
+				3D26F9975406444E8E432056 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,126 +36,236 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		39C3E7792472F69E001AD0CC /* Show.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E76D2472F69E001AD0CC /* Show.cpp */; };
-		39C3E77A2472F69E001AD0CC /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E76E2472F69E001AD0CC /* pch.cpp */; };
-		39C3E77B2472F69E001AD0CC /* classHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E7702472F69E001AD0CC /* classHeader.cpp */; };
-		39C3E77C2472F69E001AD0CC /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E7712472F69E001AD0CC /* log.cpp */; };
-		39C3E77D2472F69E001AD0CC /* functional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E7722472F69E001AD0CC /* functional.cpp */; };
-		39C3E77E2472F69E001AD0CC /* main_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E7742472F69E001AD0CC /* main_stack.cpp */; };
-		39C3E77F2472F69E001AD0CC /* Maybe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C3E7772472F69E001AD0CC /* Maybe.cpp */; };
-		9C01892AD87F437FB1E1D7B9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97F453A6BD8B41F0A1DE6F96 /* main.cpp */; };
+		030683D5169C44B38AC62966 /* /Users/min/dev/cpphelloworld/cpphelloworld/main_stack.cpp */ = {isa = PBXBuildFile; fileRef = CF47DE1583A24ECE85489B26 /* /Users/min/dev/cpphelloworld/cpphelloworld/main_stack.cpp */; };
+		03BB2EB57CC346548A2AC423 /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.cpp */ = {isa = PBXBuildFile; fileRef = 3D9861A2FBA04B9BBAD388C8 /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.cpp */; };
+		03D946D791DD4EDDBBAFFFE0 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.hpp */ = {isa = PBXBuildFile; fileRef = C8890FC8A36D477B8A17E044 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.hpp */; };
+		3814C88E143B44628ACECA94 /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.cpp */ = {isa = PBXBuildFile; fileRef = 5A431E1DA2F9420E8E7E27CD /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.cpp */; };
+		677977AFD4AA4A7A873BCE5B /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7B84FB3F12FE45888BA99977 /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */; };
+		6A38D389067C4AC8B527B39D /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9D5FF7D7ABA649BDBB24636A /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */; };
+		72A97D94448A427DB0E14C8D /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.hpp */ = {isa = PBXBuildFile; fileRef = 92FDEA73B79C4065BC967BAA /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.hpp */; };
+		A8410848FC4F4C329703F3A5 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.cpp */ = {isa = PBXBuildFile; fileRef = 7A77552EF472489DBA10F593 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.cpp */; };
+		B1E3A1C1ACD04081BCA7B0AE /* /Users/min/dev/cpphelloworld/cpphelloworld/main.cpp */ = {isa = PBXBuildFile; fileRef = 0860628F023D40C7807653EC /* /Users/min/dev/cpphelloworld/cpphelloworld/main.cpp */; };
+		CC3873EE99784FCA90E5B68E /* /Users/min/dev/cpphelloworld/cpphelloworld/Stack.h */ = {isa = PBXBuildFile; fileRef = 7F49517C2D074CF88B908661 /* /Users/min/dev/cpphelloworld/cpphelloworld/Stack.h */; };
+		CC4163C5BDC14700B0BE7008 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.hpp */ = {isa = PBXBuildFile; fileRef = F05BC51BCEA448FABFCB0623 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.hpp */; };
+		D6362CAE92444F6F82B4573C /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C64CA0D885094B58952EEA11 /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */; };
+		D75631C2531643F58A740400 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.cpp */ = {isa = PBXBuildFile; fileRef = 324E4A4FAD1247B7AA4B7D16 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.cpp */; };
+		E9C1451F0AF849BEA2A4E811 /* /Users/min/dev/cpphelloworld/cpphelloworld/Comparable.h */ = {isa = PBXBuildFile; fileRef = D87BEE4E44424D2CA8E9C2B4 /* /Users/min/dev/cpphelloworld/cpphelloworld/Comparable.h */; };
+		EF561F1977D44D5693BC3071 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.cpp */ = {isa = PBXBuildFile; fileRef = 1048AC2DFDD64298B779DE75 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.cpp */; };
+		F8B7BFFBFBB047FE9582A871 /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.h */ = {isa = PBXBuildFile; fileRef = 143442A8ABCA4F978C45731A /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.h */; };
+		F8D00888DEC549D3A467168F /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.h */ = {isa = PBXBuildFile; fileRef = 3B4932AFE58B4AE68EAF6437 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildStyle section */
+		0682846FFB48493C98C0B8EF /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		0794D559CBF94D839AC9063D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		2207BEE0BECE4C2E94378772 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		6C02B877E9E048F6BB3FBE74 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
 /* Begin PBXContainerItemProxy section */
-		9DAC30DBC7774AB9B23C6F98 /* PBXContainerItemProxy */ = {
+		4022F68F692E421EBBA7EB68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0FFAA3DD53514353BC75A639;
 			remoteInfo = ZERO_CHECK;
 		};
-		C1B443BBC1634998BBB06571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0FFAA3DD53514353BC75A639;
-			remoteInfo = ZERO_CHECK;
-		};
-		CC7A31FA7CE04DBFAE5A5112 /* PBXContainerItemProxy */ = {
+		52B52D4E90C7445899DE1078 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 316BE6B015004986B48DDD1A;
 			remoteInfo = helloworld;
 		};
+		5A01C2B3E94C4FFE9A72121F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FFAA3DD53514353BC75A639;
+			remoteInfo = ZERO_CHECK;
+		};
+		8545A62569A74677BC92A207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FFAA3DD53514353BC75A639;
+			remoteInfo = ZERO_CHECK;
+		};
+		AD1E91E0E34A4C8493B156AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FFAA3DD53514353BC75A639;
+			remoteInfo = ZERO_CHECK;
+		};
+		C03958F5D5F24036847C3381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA41EC8C1D8424793E1334E;
+			remoteInfo = stack;
+		};
+		D4FA8FF5A4B245E3A9AC226B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252492CFEF0545BA859C3ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E21A9CA965B44FFA823223FE;
+			remoteInfo = src;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0154611BB7DA42FF931A5E41 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		39C3E7692472F69E001AD0CC /* classHeader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = classHeader.hpp; sourceTree = "<group>"; };
-		39C3E76A2472F69E001AD0CC /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
-		39C3E76B2472F69E001AD0CC /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
-		39C3E76C2472F69E001AD0CC /* log.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = log.hpp; sourceTree = "<group>"; };
-		39C3E76D2472F69E001AD0CC /* Show.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Show.cpp; sourceTree = "<group>"; };
-		39C3E76E2472F69E001AD0CC /* pch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pch.cpp; sourceTree = "<group>"; };
-		39C3E76F2472F69E001AD0CC /* Maybe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Maybe.hpp; sourceTree = "<group>"; };
-		39C3E7702472F69E001AD0CC /* classHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classHeader.cpp; sourceTree = "<group>"; };
-		39C3E7712472F69E001AD0CC /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
-		39C3E7722472F69E001AD0CC /* functional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functional.cpp; sourceTree = "<group>"; };
-		39C3E7732472F69E001AD0CC /* Comparable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comparable.h; sourceTree = "<group>"; };
-		39C3E7742472F69E001AD0CC /* main_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_stack.cpp; sourceTree = "<group>"; };
-		39C3E7752472F69E001AD0CC /* notes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notes; sourceTree = "<group>"; };
-		39C3E7762472F69E001AD0CC /* templateClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = templateClass.hpp; sourceTree = "<group>"; };
-		39C3E7772472F69E001AD0CC /* Maybe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Maybe.cpp; sourceTree = "<group>"; };
-		39C3E7782472F69E001AD0CC /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
-		58AF3769CA8048FFB631E9A5 /* helloworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = helloworld; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F453A6BD8B41F0A1DE6F96 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		B9C84A6F95B44B0090A04D19 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0860628F023D40C7807653EC /* /Users/min/dev/cpphelloworld/cpphelloworld/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		0D44593580304AEDB7806279 /* stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = stack; sourceTree = BUILT_PRODUCTS_DIR; };
+		1048AC2DFDD64298B779DE75 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = log.cpp; path = log.cpp; sourceTree = SOURCE_ROOT; };
+		143442A8ABCA4F978C45731A /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pch.h; path = pch.h; sourceTree = SOURCE_ROOT; };
+		324E4A4FAD1247B7AA4B7D16 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = classHeader.cpp; path = classHeader.cpp; sourceTree = SOURCE_ROOT; };
+		3B4932AFE58B4AE68EAF6437 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Show.h; path = Show.h; sourceTree = SOURCE_ROOT; };
+		3D9861A2FBA04B9BBAD388C8 /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pch.cpp; path = pch.cpp; sourceTree = SOURCE_ROOT; };
+		5A431E1DA2F9420E8E7E27CD /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Maybe.cpp; path = Maybe.cpp; sourceTree = SOURCE_ROOT; };
+		5F29466D25B9404F8D332F3D /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7753492224004757A1D3105C /* src */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsrc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A77552EF472489DBA10F593 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Show.cpp; path = Show.cpp; sourceTree = SOURCE_ROOT; };
+		7B84FB3F12FE45888BA99977 /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7F49517C2D074CF88B908661 /* /Users/min/dev/cpphelloworld/cpphelloworld/Stack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Stack.h; path = Stack.h; sourceTree = SOURCE_ROOT; };
+		92FDEA73B79C4065BC967BAA /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Maybe.hpp; path = Maybe.hpp; sourceTree = SOURCE_ROOT; };
+		9D5FF7D7ABA649BDBB24636A /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C64CA0D885094B58952EEA11 /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C8890FC8A36D477B8A17E044 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = log.hpp; path = log.hpp; sourceTree = SOURCE_ROOT; };
+		CF47DE1583A24ECE85489B26 /* /Users/min/dev/cpphelloworld/cpphelloworld/main_stack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main_stack.cpp; path = main_stack.cpp; sourceTree = SOURCE_ROOT; };
+		D7B1AC7D9B1E42A5BB6CCA86 /* helloworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = helloworld; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87BEE4E44424D2CA8E9C2B4 /* /Users/min/dev/cpphelloworld/cpphelloworld/Comparable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Comparable.h; path = Comparable.h; sourceTree = SOURCE_ROOT; };
+		F05BC51BCEA448FABFCB0623 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = classHeader.hpp; path = classHeader.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		86307617D112492BB3FFFB11 /* Products */ = {
+		1D005EAEFFC8472297D57B87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58AF3769CA8048FFB631E9A5 /* helloworld */,
+				D7B1AC7D9B1E42A5BB6CCA86 /* helloworld */,
+				7753492224004757A1D3105C /* src */,
+				0D44593580304AEDB7806279 /* stack */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CE9AA7BBCFD499AA0D29EC0 /* Source Files */ = {
+		1D18EBFC2FD047DDBD072A7E /* src */ = {
 			isa = PBXGroup;
 			children = (
-				39C3E7702472F69E001AD0CC /* classHeader.cpp */,
-				39C3E7692472F69E001AD0CC /* classHeader.hpp */,
-				39C3E7732472F69E001AD0CC /* Comparable.h */,
-				39C3E7722472F69E001AD0CC /* functional.cpp */,
-				39C3E7712472F69E001AD0CC /* log.cpp */,
-				39C3E76C2472F69E001AD0CC /* log.hpp */,
-				39C3E7742472F69E001AD0CC /* main_stack.cpp */,
-				39C3E7772472F69E001AD0CC /* Maybe.cpp */,
-				39C3E76F2472F69E001AD0CC /* Maybe.hpp */,
-				39C3E7752472F69E001AD0CC /* notes */,
-				39C3E76E2472F69E001AD0CC /* pch.cpp */,
-				39C3E76B2472F69E001AD0CC /* pch.h */,
-				39C3E76D2472F69E001AD0CC /* Show.cpp */,
-				39C3E76A2472F69E001AD0CC /* Show.h */,
-				39C3E7782472F69E001AD0CC /* Stack.h */,
-				39C3E7762472F69E001AD0CC /* templateClass.hpp */,
-				97F453A6BD8B41F0A1DE6F96 /* main.cpp */,
+				B1060A53E4204B12A1F27B0D /* Source Files */,
+				39A3F757B61448BBB865F0A2 /* Header Files */,
+				9D5FF7D7ABA649BDBB24636A /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		39A3F757B61448BBB865F0A2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87BEE4E44424D2CA8E9C2B4 /* /Users/min/dev/cpphelloworld/cpphelloworld/Comparable.h */,
+				92FDEA73B79C4065BC967BAA /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.hpp */,
+				3B4932AFE58B4AE68EAF6437 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.h */,
+				7F49517C2D074CF88B908661 /* /Users/min/dev/cpphelloworld/cpphelloworld/Stack.h */,
+				F05BC51BCEA448FABFCB0623 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.hpp */,
+				C8890FC8A36D477B8A17E044 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.hpp */,
+				143442A8ABCA4F978C45731A /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		3CDA921E10F94B49A89B8017 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF47DE1583A24ECE85489B26 /* /Users/min/dev/cpphelloworld/cpphelloworld/main_stack.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		AA06DE88B3BD4C22A802009A /* CMake Rules */ = {
+		482F7C515EE6415AA80BFD65 /* helloworld */ = {
+			isa = PBXGroup;
+			children = (
+				7DCE7D3738B84255B5656695 /* Source Files */,
+				C64CA0D885094B58952EEA11 /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */,
+			);
+			name = helloworld;
+			sourceTree = "<group>";
+		};
+		58DB0627769948968272EB70 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		F07C95098A5D4270880ED74F /* helloworld */ = {
+		7DCE7D3738B84255B5656695 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				9CE9AA7BBCFD499AA0D29EC0 /* Source Files */,
-				0154611BB7DA42FF931A5E41 /* CMakeLists.txt */,
+				0860628F023D40C7807653EC /* /Users/min/dev/cpphelloworld/cpphelloworld/main.cpp */,
 			);
-			name = helloworld;
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		F694B60870DF4686BB91B4DB = {
+		86EE2D190FC5471389465CD7 /* stack */ = {
 			isa = PBXGroup;
 			children = (
-				F07C95098A5D4270880ED74F /* helloworld */,
-				F6D390C107BC431F8253D819 /* ALL_BUILD */,
-				86307617D112492BB3FFFB11 /* Products */,
+				3CDA921E10F94B49A89B8017 /* Source Files */,
+				7B84FB3F12FE45888BA99977 /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */,
+			);
+			name = stack;
+			sourceTree = "<group>";
+		};
+		B1060A53E4204B12A1F27B0D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A431E1DA2F9420E8E7E27CD /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.cpp */,
+				7A77552EF472489DBA10F593 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.cpp */,
+				324E4A4FAD1247B7AA4B7D16 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.cpp */,
+				1048AC2DFDD64298B779DE75 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.cpp */,
+				3D9861A2FBA04B9BBAD388C8 /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E054C8CD402A45F7B9364DE7 = {
+			isa = PBXGroup;
+			children = (
+				86EE2D190FC5471389465CD7 /* stack */,
+				482F7C515EE6415AA80BFD65 /* helloworld */,
+				1D18EBFC2FD047DDBD072A7E /* src */,
+				E448A2BC43934E8F840C429D /* ALL_BUILD */,
+				1D005EAEFFC8472297D57B87 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F6D390C107BC431F8253D819 /* ALL_BUILD */ = {
+		E448A2BC43934E8F840C429D /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				AA06DE88B3BD4C22A802009A /* CMake Rules */,
-				B9C84A6F95B44B0090A04D19 /* CMakeLists.txt */,
+				58DB0627769948968272EB70 /* CMake Rules */,
+				5F29466D25B9404F8D332F3D /* /Users/min/dev/cpphelloworld/cpphelloworld/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
@@ -163,19 +275,51 @@
 /* Begin PBXNativeTarget section */
 		316BE6B015004986B48DDD1A /* helloworld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C81039BA703C47C789F969D0 /* Build configuration list for PBXNativeTarget "helloworld" */;
+			buildConfigurationList = 64C49FC348C34C4DB0D8FE62 /* Build configuration list for PBXNativeTarget "helloworld" */;
 			buildPhases = (
-				6CBEE76ABF604709A890C735 /* Sources */,
+				6FB5B580F9A04C4481F04754 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A6F0E8DD5F94D718E0F437E /* PBXTargetDependency */,
+				11F3336A53844D37A7B97252 /* PBXTargetDependency */,
 			);
 			name = helloworld;
 			productName = helloworld;
-			productReference = 58AF3769CA8048FFB631E9A5 /* helloworld */;
+			productReference = D7B1AC7D9B1E42A5BB6CCA86 /* helloworld */;
 			productType = "com.apple.product-type.tool";
+		};
+		AFA41EC8C1D8424793E1334E /* stack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA25A473A2C42189203244D /* Build configuration list for PBXNativeTarget "stack" */;
+			buildPhases = (
+				F6FC4BA8297E49AFA58576E0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E65BF2CA7A405F8448A145 /* PBXTargetDependency */,
+			);
+			name = stack;
+			productName = stack;
+			productReference = 0D44593580304AEDB7806279 /* stack */;
+			productType = "com.apple.product-type.tool";
+		};
+		E21A9CA965B44FFA823223FE /* src */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1CD1C747AA45A1BC5D0EC2 /* Build configuration list for PBXNativeTarget "src" */;
+			buildPhases = (
+				A475AC5757374D6395CC645E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7259F45FEFBB42308F0E49FA /* PBXTargetDependency */,
+			);
+			name = src;
+			productName = src;
+			productReference = 7753492224004757A1D3105C /* src */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -183,40 +327,50 @@
 		252492CFEF0545BA859C3ACD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1140;
 			};
-			buildConfigurationList = 8611ED987CC741578C4EDF7D /* Build configuration list for PBXProject "cpphelloworld" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
+			buildConfigurationList = 07DF503379B549B7B171638C /* Build configuration list for PBXProject "cpphelloworld" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				6C02B877E9E048F6BB3FBE74 /* Debug */,
+				2207BEE0BECE4C2E94378772 /* Release */,
+				0682846FFB48493C98C0B8EF /* MinSizeRel */,
+				0794D559CBF94D839AC9063D /* RelWithDebInfo */,
 			);
-			mainGroup = F694B60870DF4686BB91B4DB;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = E054C8CD402A45F7B9364DE7;
 			projectDirPath = cpphelloworld;
 			projectRoot = "";
 			targets = (
 				2914792646A142299FEA47FE /* ALL_BUILD */,
 				0FFAA3DD53514353BC75A639 /* ZERO_CHECK */,
 				316BE6B015004986B48DDD1A /* helloworld */,
+				E21A9CA965B44FFA823223FE /* src */,
+				AFA41EC8C1D8424793E1334E /* stack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		90264F5732AD4536B3194B3A /* CMake Rules */ = {
+		367E4077839C43E4BFC16E6D = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			name = "CMake Rules";
+			inputPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/min/dev/cpphelloworld -f /Users/min/dev/cpphelloworld/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			shellScript = "# shell script goes here
+exit 0";
 			showEnvVarsInLog = 0;
 		};
-		C50944A5EE764AAAAA655791 /* CMake Rules */ = {
+		51C21D53EE934B8E8A37162D /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,82 +381,112 @@
 			shellScript = "make -C /Users/min/dev/cpphelloworld -f /Users/min/dev/cpphelloworld/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
+		8331ED9024BE401194F3DBF3 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D807E661B41B4C98ABCC6F2C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/min/dev/cpphelloworld -f /Users/min/dev/cpphelloworld/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6CBEE76ABF604709A890C735 /* Sources */ = {
+		6FB5B580F9A04C4481F04754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39C3E77F2472F69E001AD0CC /* Maybe.cpp in Sources */,
-				39C3E77A2472F69E001AD0CC /* pch.cpp in Sources */,
-				39C3E7792472F69E001AD0CC /* Show.cpp in Sources */,
-				39C3E77E2472F69E001AD0CC /* main_stack.cpp in Sources */,
-				9C01892AD87F437FB1E1D7B9 /* main.cpp in Sources */,
-				39C3E77C2472F69E001AD0CC /* log.cpp in Sources */,
-				39C3E77D2472F69E001AD0CC /* functional.cpp in Sources */,
-				39C3E77B2472F69E001AD0CC /* classHeader.cpp in Sources */,
+				B1E3A1C1ACD04081BCA7B0AE /* /Users/min/dev/cpphelloworld/cpphelloworld/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A475AC5757374D6395CC645E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3814C88E143B44628ACECA94 /* /Users/min/dev/cpphelloworld/cpphelloworld/Maybe.cpp */,
+				A8410848FC4F4C329703F3A5 /* /Users/min/dev/cpphelloworld/cpphelloworld/Show.cpp */,
+				D75631C2531643F58A740400 /* /Users/min/dev/cpphelloworld/cpphelloworld/classHeader.cpp */,
+				EF561F1977D44D5693BC3071 /* /Users/min/dev/cpphelloworld/cpphelloworld/log.cpp */,
+				03BB2EB57CC346548A2AC423 /* /Users/min/dev/cpphelloworld/cpphelloworld/pch.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FC4BA8297E49AFA58576E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030683D5169C44B38AC62966 /* /Users/min/dev/cpphelloworld/cpphelloworld/main_stack.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A6F0E8DD5F94D718E0F437E /* PBXTargetDependency */ = {
+		11F3336A53844D37A7B97252 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0FFAA3DD53514353BC75A639 /* ZERO_CHECK */;
-			targetProxy = 9DAC30DBC7774AB9B23C6F98 /* PBXContainerItemProxy */;
+			targetProxy = 8545A62569A74677BC92A207 /* PBXContainerItemProxy */;
 		};
-		CF1E605A477C4B99B14E18F8 /* PBXTargetDependency */ = {
+		3D26F9975406444E8E432056 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 316BE6B015004986B48DDD1A /* helloworld */;
-			targetProxy = CC7A31FA7CE04DBFAE5A5112 /* PBXContainerItemProxy */;
+			targetProxy = 52B52D4E90C7445899DE1078 /* PBXContainerItemProxy */;
 		};
-		E1DEBA4A5C9246758D6DE987 /* PBXTargetDependency */ = {
+		403D7CE7F387428EB44EF76D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E21A9CA965B44FFA823223FE /* src */;
+			targetProxy = D4FA8FF5A4B245E3A9AC226B /* PBXContainerItemProxy */;
+		};
+		60E65BF2CA7A405F8448A145 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0FFAA3DD53514353BC75A639 /* ZERO_CHECK */;
-			targetProxy = C1B443BBC1634998BBB06571 /* PBXContainerItemProxy */;
+			targetProxy = 4022F68F692E421EBBA7EB68 /* PBXContainerItemProxy */;
+		};
+		7259F45FEFBB42308F0E49FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FFAA3DD53514353BC75A639 /* ZERO_CHECK */;
+			targetProxy = 5A01C2B3E94C4FFE9A72121F /* PBXContainerItemProxy */;
+		};
+		F6E5CE47419C4356888C5DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA41EC8C1D8424793E1334E /* stack */;
+			targetProxy = C03958F5D5F24036847C3381 /* PBXContainerItemProxy */;
+		};
+		FC1C6F38DEF146FCB59D1EF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FFAA3DD53514353BC75A639 /* ZERO_CHECK */;
+			targetProxy = AD1E91E0E34A4C8493B156AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0652A49E83C348F0B31B7ADA /* Release */ = {
+		01E7E705CD304BB3B83593F0 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/min/dev/cpphelloworld;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		066B5A1FEC4E4337A725658A /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = /Users/min/dev/cpphelloworld/build;
-			};
-			name = MinSizeRel;
-		};
-		089027E330CC4256AAF6DA1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -311,89 +495,35 @@
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		0DDF4A7BEA9D465E812F04F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = /Users/min/dev/cpphelloworld/build;
-			};
-			name = Debug;
-		};
-		3AFE5371D1144499A87283EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/min/dev/cpphelloworld;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		5A8DE99D2F7D4C11861C22A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
-				SYMROOT = /Users/min/dev/cpphelloworld/build;
-			};
-			name = Release;
-		};
-		7164A94BFEBA4260A8386BF6 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/min/dev/cpphelloworld;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		7C8FCAE09D7648D4A13ED473 /* MinSizeRel */ = {
+		1807BB129BA64736BD0C367E /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = src;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		97CA873390D144078E66EEF0 /* RelWithDebInfo */ = {
+		1A7A8028536640BDB6E4A1D1 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -402,48 +532,22 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-std=c++14",
-					"-DNDEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-				);
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = helloworld;
+				PRODUCT_NAME = stack;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		9A6E34AEE3DD4006A9E8F9BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/min/dev/cpphelloworld;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		9F8FC98CC73D48B4AA1B28BE /* Release */ = {
+		29F917E9CDE64D559C5080B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -452,82 +556,53 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-std=c++14",
-					"-DNDEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-				);
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = helloworld;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		A67610C72DFC40409F15D902 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/min/dev/cpphelloworld;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
-		};
-		B16EAC3DE1C9481DAFE72E61 /* Debug */ = {
+		35FB9553D93E4729A9340AA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = " -std=c++14     ";
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-				);
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = helloworld;
+				PRODUCT_NAME = stack;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = Release;
 		};
-		B504439F9D444403B7CB733A /* MinSizeRel */ = {
+		38055D771AF641D29125E35B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -536,11 +611,97 @@
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		472EB950240E4262A50B49F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4E0FFBADAD9F438996EDB6CF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = src;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		57056A07218B4B21B7A21CA0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/min/dev/cpphelloworld/build;
 			};
 			name = MinSizeRel;
 		};
-		C7B23DC2B3F64CF98803A1AA /* MinSizeRel */ = {
+		6406609ADC7349559F5A0D58 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = helloworld;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		878E2AEF4F8B4E0996149408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/min/dev/cpphelloworld/build;
+			};
+			name = Debug;
+		};
+		90426E91F00D4B408528AC71 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -549,28 +710,227 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-std=c++14",
-					"-DNDEBUG",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-				);
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stack;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9FD0D902B3064C4587CFFD44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/min/dev/cpphelloworld/build;
+			};
+			name = Release;
+		};
+		A07131ECA56C461292524FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = src;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AB5EF776A600425BB98F168D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AE6E0583C7204A2F8340F236 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = helloworld;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/min/dev/cpphelloworld;
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		CA36D5A4F30A44AF83954B98 /* RelWithDebInfo */ = {
+		B290B2BCF3F44150A64A0981 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B6A2136320834162A11C87B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = src;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B792E7BEC9A8416E9691BC85 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B916281599D84F14BE702D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stack;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D16F5ECBD88D44E7B6834283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D3D6536B781145D5AB54B141 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EBE550DE24CF417693E339B6 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
@@ -579,49 +939,95 @@
 			};
 			name = RelWithDebInfo;
 		};
+		F6A1C40195964270855BB973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++14     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = helloworld;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/min/dev/cpphelloworld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2910DBFB64EA45E68841E768 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		07DF503379B549B7B171638C /* Build configuration list for PBXProject "cpphelloworld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AFE5371D1144499A87283EC /* Debug */,
-				089027E330CC4256AAF6DA1C /* Release */,
-				7C8FCAE09D7648D4A13ED473 /* MinSizeRel */,
-				A67610C72DFC40409F15D902 /* RelWithDebInfo */,
+				878E2AEF4F8B4E0996149408 /* Debug */,
+				9FD0D902B3064C4587CFFD44 /* Release */,
+				57056A07218B4B21B7A21CA0 /* MinSizeRel */,
+				EBE550DE24CF417693E339B6 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5830E8F64A1949FC8A6CE66E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		4C1CD1C747AA45A1BC5D0EC2 /* Build configuration list for PBXNativeTarget "src" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A6E34AEE3DD4006A9E8F9BB /* Debug */,
-				0652A49E83C348F0B31B7ADA /* Release */,
-				B504439F9D444403B7CB733A /* MinSizeRel */,
-				7164A94BFEBA4260A8386BF6 /* RelWithDebInfo */,
+				B6A2136320834162A11C87B7 /* Debug */,
+				A07131ECA56C461292524FAD /* Release */,
+				1807BB129BA64736BD0C367E /* MinSizeRel */,
+				4E0FFBADAD9F438996EDB6CF /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8611ED987CC741578C4EDF7D /* Build configuration list for PBXProject "cpphelloworld" */ = {
+		4FA25A473A2C42189203244D /* Build configuration list for PBXNativeTarget "stack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0DDF4A7BEA9D465E812F04F9 /* Debug */,
-				5A8DE99D2F7D4C11861C22A9 /* Release */,
-				066B5A1FEC4E4337A725658A /* MinSizeRel */,
-				CA36D5A4F30A44AF83954B98 /* RelWithDebInfo */,
+				B916281599D84F14BE702D39 /* Debug */,
+				35FB9553D93E4729A9340AA7 /* Release */,
+				90426E91F00D4B408528AC71 /* MinSizeRel */,
+				1A7A8028536640BDB6E4A1D1 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C81039BA703C47C789F969D0 /* Build configuration list for PBXNativeTarget "helloworld" */ = {
+		64C49FC348C34C4DB0D8FE62 /* Build configuration list for PBXNativeTarget "helloworld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B16EAC3DE1C9481DAFE72E61 /* Debug */,
-				9F8FC98CC73D48B4AA1B28BE /* Release */,
-				C7B23DC2B3F64CF98803A1AA /* MinSizeRel */,
-				97CA873390D144078E66EEF0 /* RelWithDebInfo */,
+				F6A1C40195964270855BB973 /* Debug */,
+				29F917E9CDE64D559C5080B4 /* Release */,
+				AE6E0583C7204A2F8340F236 /* MinSizeRel */,
+				6406609ADC7349559F5A0D58 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7E69E49FEBA246E38254ACC7 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38055D771AF641D29125E35B /* Debug */,
+				D16F5ECBD88D44E7B6834283 /* Release */,
+				B290B2BCF3F44150A64A0981 /* MinSizeRel */,
+				B792E7BEC9A8416E9691BC85 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A23C1DAE5F0D470184AF4443 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472EB950240E4262A50B49F7 /* Debug */,
+				AB5EF776A600425BB98F168D /* Release */,
+				D3D6536B781145D5AB54B141 /* MinSizeRel */,
+				01E7E705CD304BB3B83593F0 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

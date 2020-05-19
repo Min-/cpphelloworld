@@ -14,5 +14,7 @@
 #include <algorithm>
 #include <functional>
 #include <string>
+#include <array>
+#include <stdio.h>
 
 #endif /* pch_h */

@@ -6,14 +6,12 @@
 //  Copyright © 2020 Min Zhang. All rights reserved.
 //
 
-#include <stdio.h>
-#include <iostream>
 #include "pch.h"
 #include "Stack.h"
 
 // when use, change this to int main()
 // one main function is enough
-int main_stack(){
+int main(){
     Stack<int> a(10);
     std::cout << sizeof(a) << std::endl;
     std::cout << &a << std::endl;
