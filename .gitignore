@@ -6,3 +6,5 @@ CMakeCache*
 *cmake
 *swp
 .idea
+*code-workspace
+.vscode/
